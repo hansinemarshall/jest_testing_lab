@@ -21,19 +21,26 @@
     };
     
     const even = function(x){
-        if(x % 2 === 0 ){
-            return true;
-        } else {
-            return false;
-        }
+        // if(x % 2 === 0 ){
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+        // THIS CAN BE SHORTENED TO         return x % 2 === 0;
+
+        // The solution to the extension for reusing code 
+        return (modulus(x,2))=== 0;
+
     };
     
     const odd = function(y){
-        if(y % 2 === 1){
-            return true
-        } else {
-            return false;
-        }
+        // if(y % 2 === 1){
+        //     return true
+        // } else {
+        //     return false;
+        // }
+        // THIS CAN BE SHORTENDED TO        return y % 2 !== 0;
+        return (modulus(y,2))!== 0;
     };
     
     module.exports = { 
